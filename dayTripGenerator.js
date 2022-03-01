@@ -1,7 +1,7 @@
 "use strict"
 
 console.log("Hello World!")
-
+let randomDestination;
 let primoDestinatons = ["Seattle", "Portland", "Paris", "Luckenbach, TX", "San Diego", "Bozeman"];
 
 function randomGenerator(myArray){
@@ -13,7 +13,7 @@ function destinationGenerator(){
     let userIsHappy = false
 
     while(userIsHappy === false){
-        let randomDestination = randomGenerator(primoDestinatons)
+        randomDestination = randomGenerator(primoDestinatons)
 
         let userResponse = prompt(`Your randomly generated destination is ${randomDestination}. Are you OK with that?`)
 
@@ -31,6 +31,7 @@ function destinationGenerator(){
 
 destinationGenerator()
 
+let randomDinner;
 let primoEats = ["BBQ", "Fish and Chips", "Rocky Mountain Oysters", "Wheat Grass", "VooDoo Doughnuts", "Fondue"];
 
 
@@ -38,7 +39,7 @@ function foodGenerator(){
     let userIsHappy = false
 
     while (userIsHappy === false){
-        let randomDinner = randomGenerator(primoEats)
+        randomDinner = randomGenerator(primoEats)
 
         let userResponse = prompt(`Your randomly generated food is ${randomDinner}. Are you OK with that?`)
 
@@ -55,6 +56,7 @@ function foodGenerator(){
 
 foodGenerator()
 
+let randomTransport;
 let primoTransport = ["Bike", "Foot Mobile", "Uber", "Segway", "Horseback", "Pony Express"];
 
 
@@ -62,7 +64,7 @@ function transportGenerator(){
     let userIsHappy = false
 
     while(userIsHappy === false){
-        let randomTransport = randomGenerator(primoTransport)
+        randomTransport = randomGenerator(primoTransport)
 
         let userResponse = prompt(`Your randomly generated transportation is ${randomTransport}. Are you OK with that?`)
 
@@ -78,6 +80,7 @@ function transportGenerator(){
 
 transportGenerator()
 
+let randomEntertainment;
 let primoEntertainment = ["Everclear", "PBR Rodeo", "Willie Nelson", "Bar Fights", "The Louvre"];
 
 
@@ -85,7 +88,7 @@ function entertainmentGenerator(){
     let userIsHappy = false
 
     while(userIsHappy === false){
-        let randomEntertainment = randomGenerator(primoEntertainment)
+        randomEntertainment = randomGenerator(primoEntertainment)
 
         let userResponse = prompt(`Your randomly generated entertainment is ${randomEntertainment}. Are you OK with that?`)
 
@@ -100,3 +103,7 @@ function entertainmentGenerator(){
 
 entertainmentGenerator()
 
+function printOutTrip(){
+    console.log(`Congrats! You have decided to go to ${randomDestination}, and eat some ${randomDinner}. You'll be travelling via ${randomTransport} to go see ${randomEntertainment}!!`)
+}
+printOutTrip()
