@@ -86,3 +86,28 @@ function transportGenerator(){
 
 transportGenerator()
 
+let primoEntertainment = ["Everclear", "PBR Rodeo", "Willie Nelson", "Bar Fights", "The Louvre"];
+
+function randomGenerator(myArray){
+    let randomChoice = myArray[Math.floor(Math.random() * myArray.length)]
+}
+
+function entertainmentGenerator(){
+    let userIsHappy = false
+
+    while(userIsHappy === false){
+        let randomEntertainment = randomGenerator(primoEntertainment)
+
+        let userResponse = prompt(`Your randomly generated entertainment is ${randomEntertainment}. Are you OK with that?`)
+
+        if(userResponse.toLowerCase() === "yes"){
+            alert(`Enjoy ${randomEntertainment}`)
+            userIsHappy = true
+        }else if(userResponse.toLowerCase() ==="no"){
+            userIsHappy = false
+        }
+    }
+}
+
+entertainmentGenerator()
+
