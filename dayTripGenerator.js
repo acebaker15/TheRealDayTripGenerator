@@ -57,7 +57,7 @@ function foodGenerator(){
 foodGenerator()
 
 let randomTransport;
-let primoTransport = ["Bike", "Foot Mobile", "Uber", "Segway", "Horseback", "Pony Express"];
+let primoTransport = ["bike", "foot mobile", "Uber", "Segway", "horseback", "thee Pony Express"];
 
 
 function transportGenerator(){
@@ -81,7 +81,7 @@ function transportGenerator(){
 transportGenerator()
 
 let randomEntertainment;
-let primoEntertainment = ["Everclear", "PBR Rodeo", "Willie Nelson", "Bar Fights", "The Louvre"];
+let primoEntertainment = ["Everclear", "a PBR Rodeo", "Willie Nelson", "some bar fights", "the homies"];
 
 
 function entertainmentGenerator(){
