@@ -33,10 +33,6 @@ destinationGenerator()
 
 let primoEats = ["BBQ", "Fish and Chips", "Rocky Mountain Oysters", "Wheat Grass", "VooDoo Doughnuts", "Fondue"];
 
-function randomGenerator(myArray){
-    let randomChoice = myArray[Math.floor(Math.random() * myArray.length)]
-    return randomChoice
-}
 
 function foodGenerator(){
     let userIsHappy = false
@@ -61,10 +57,6 @@ foodGenerator()
 
 let primoTransport = ["Bike", "Foot Mobile", "Uber", "Segway", "Horseback", "Pony Express"];
 
-function randomGenerator(myArray){
-    let randomChoice = myArray[Math.floor(Math.random() * myArray.length)]
-    return randomChoice
-}
 
 function transportGenerator(){
     let userIsHappy = false
@@ -88,9 +80,6 @@ transportGenerator()
 
 let primoEntertainment = ["Everclear", "PBR Rodeo", "Willie Nelson", "Bar Fights", "The Louvre"];
 
-function randomGenerator(myArray){
-    let randomChoice = myArray[Math.floor(Math.random() * myArray.length)]
-}
 
 function entertainmentGenerator(){
     let userIsHappy = false
